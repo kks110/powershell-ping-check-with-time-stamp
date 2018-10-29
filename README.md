@@ -5,7 +5,7 @@ Ping check with a time stamp
 This will ping a specified ip until asked to stop and will save the file to the computer. Every 100 pings it will insert a time stamp in to the file.
  
 ## timestamp-ping-limited.ps1
-This will ping a specified ip 10 times for as many times as you tell it to, between each set of 10, it will add a time stamp.
+This will ping a specified ip 10 times for as many times as you tell it to. Between each set of 10, it will add a time stamp.
 
 ## Info for both files:
 * By default it will create a file on the root of C so will need to be run as an Admin.
