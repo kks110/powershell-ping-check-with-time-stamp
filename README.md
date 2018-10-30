@@ -9,6 +9,6 @@ This will ping a specified ip 10 times for as many times as you tell it to. Betw
 
 ## Info for both files:
 * By default it will create a file on the root of C so will need to be run as an Admin.
-* It it's an IPv4 address, or a hostname / domain name, it will call the file that. If it’s IPv6, it will call it IPv6_Pingtest.txt.
+* If it's an IPv4 address, or a hostname / domain name, it will call the file that. If it’s IPv6, it will call it IPv6_Pingtest.txt.
 * It will check if the file already exists, if it does, it will ask if you want to delete it or append to it.
-* It you haven't already, remember to set your execution policy - `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
+* If you haven't already, remember to set your execution policy - `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
