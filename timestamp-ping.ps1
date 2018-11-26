@@ -1,13 +1,5 @@
-﻿#IP address to ping.
+#IP address to ping.
 $ip = Read-Host -Prompt 'Where would you like to ping?'
-
-
-#Determines if its IPv4 or 6.
-if ($ip -like '*:*') {
-    $ipv = "-6"
-} else {
-    $ipv = "-4"
-}
 
 
 #If the directory doesn't exist, it creates it.
@@ -17,13 +9,14 @@ New-Item C:\pings -type directory -Force | Out-Null
 }
 
 
-# Output file name.
-if ($ip -like '*:*'){
+#Determines if its IPv4 or 6 and determines file name.
+if ($ip -like '*:*') {
+    $ipv = "-6"
     $file = "C:\pings\IPv6_Pingtest.txt"
 } else {
+    $ipv = "-4"
     $file = "C:\pings\" + $ip + ".txt"
 }
-
 
 # Checks to see if the file already exsist and asks if you want to delete it.
 if (Test-Path $file) {
