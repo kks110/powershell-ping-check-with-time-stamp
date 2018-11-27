@@ -1,4 +1,4 @@
-﻿#IP address to ping.
+#IP address to ping.
 $ip = Read-Host -Prompt "Where would you like to ping?"
 
 
