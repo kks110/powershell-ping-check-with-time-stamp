@@ -5,7 +5,7 @@ $ip = Read-Host -Prompt "Where would you like to ping?"
 #If the directory doesn't exist, it creates it.
 if (-Not (Test-Path "C:\pings"))
 {
-New-Item C:\pings -type directory -Force | Out-Null
+    New-Item C:\pings -type directory -Force | Out-Null
 }
 
 
@@ -30,6 +30,8 @@ if (Test-Path $file) {
 #Rounds of 10 pings.
 $rounds = Read-Host -Prompt 'How many sets of 10 pings would you like to do?'
 
+"Starting Test:"
+$i = 0
 
 #Pings and outputs to the file.
 while ($i -lt $rounds){
